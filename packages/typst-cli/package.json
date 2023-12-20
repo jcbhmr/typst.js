@@ -1,0 +1,55 @@
+{
+    "name": "typst",
+    "version": "0.10.0-9",
+    "description": "📦 Typst redistributed via npm",
+    "keywords": [
+      "typesetting",
+      "markup",
+      "typesetter",
+      "typeset",
+      "typst",
+      "latex",
+      "markdown",
+      "pdf"
+    ],
+    "homepage": "https://github.com/typst-community/typst.js/tree/main/packages/typst-cli",
+    "bugs": "https://github.com/typst-community/typst.js/issues",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/typst-community/typst.js.git",
+        "directory": "packages/typst-cli"
+    },
+    "license": "Apache-2.0",
+    "contributors": [
+      "Jacob Hummer <jcbhmr@outlook.com> (https://jcbhmr.me/)"
+    ],
+    "type": "module",
+    "exports": null,
+    "bin": {
+        "typst": "main.js"
+    },
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+      "test": "node --test",
+      "prepare": "bash tools/prepare.sh",
+      "build": "bash tools/generate-dist-package.sh --all",
+      "prepublishOnly": "bash tools/prepublishOnly.sh",
+      "postversion": "node tools/postversion.js"
+    },
+    "dependencies": {
+      "execa": "^8.0.1"
+    },
+    "devDependencies": {
+      "@types/node": "^20.10.4"
+    },
+    "optionalDependencies": {
+      "@typst-community/typst-cli-darwin-arm64": "0.10.0-8",
+      "@typst-community/typst-cli-darwin-x64": "0.10.0-8",
+      "@typst-community/typst-cli-linux-arm64": "0.10.0-8",
+      "@typst-community/typst-cli-linux-x64": "0.10.0-8",
+      "@typst-community/typst-cli-win32-x64": "0.10.0-8"
+    }
+  }
+  

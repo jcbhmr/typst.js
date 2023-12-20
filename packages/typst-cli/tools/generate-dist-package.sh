@@ -37,7 +37,7 @@ See $npm_package_homepage for more information.
 EOF
 
   export TYPST_INSTALL="./out/$1/.typst"
-  bash "$script_dir/typst_install_target.sh" "$version" "$1"
+  bash "$script_dir/typst-installer.sh" "$version" "$1"
 )
 
 
